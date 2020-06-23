@@ -1,14 +1,34 @@
 # NHXHide
-Repository for Source code of NHXHide, a data in image encoding module.
+NHXHide is a tool written in Python used to penetrate data into image files and reading from them.
 
-Using this tool is as simplistic as possible, you will be guided by tool itself.
+# New Features!
 
-Installation of Python version 3 or greater is a prerequisite.
+  - Support for reading data or extracting data to external sources (files).
+  - Support for Binaries and large external files.
 
-If using on Linux, I recommend running setup.sh script to make sure that you can access the tool from any directory you want, by just typing, "NHXHide".
+### Installation
 
-*When passed the optional argument, the data is extracted or penetrated from the data file provided (Large Files Supported!).
+NHXHide requires Python 3+ to run.
 
-Windows users just access the tool via the Python shell.
+To install on Linux or OSX, install:
 
-Happy Data Penetration!
+```sh
+$ git clone https://github.com/chmuhammadsohaib/NHXHide.git
+$ cd NHXHide
+$ chmod +x setup.sh 
+$ ./setup.sh
+```
+
+For Windows, directly download NHXHide .py and use it via python3 shell:
+
+```sh
+$ python3 NHXHide.py
+```
+
+### Usage
+
+Using this tool is simple. One argument is required, which is the image file to read or write data to, and the second optional argument is the file to read the data from, to be written to image, or the file for writng back the extracted data from the image file.
+
+```sh
+$ NHXHide <image file> <optional:data file>
+```
