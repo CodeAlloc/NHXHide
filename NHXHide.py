@@ -2,14 +2,14 @@
 import sys
 print("\n\t***___Welcome To NHXHide___***\n\n\n")
 if len(sys.argv) < 2:
-    print("\t\tUsage: NHXHide <image file name> <optional:data file>")
+    print("\t\tUsage: NHXHide <multimedia file name> <optional:data file>")
     exit(-1)
 response = input("\tChoose from the menu:\n\n\t\t(E)xtract existing data\n\t\t(P)enetrate new data\n\t\t(R)emove existing data\n\t\t(Any) other letter to quit\n\n: \t")
 if response == "E" or response == "e":
     try:
         image = open(sys.argv[1], "rb")
     except FileNotFoundError:
-        print("Error: The image file you specified was not found.")
+        print("Error: The multimedia file you specified was not found.")
         exit(-1)
     contents = image.read()
     image.close()
@@ -31,7 +31,7 @@ elif response == "P" or response == "p":
     try:
         image = open(sys.argv[1], "rb")
     except FileNotFoundError:
-        print("Error: The image file you specified was not found.")
+        print("Error: The multimedia file you specified was not found.")
         exit(-1)
     if len(sys.argv) < 3:
         data = input("Type data to be penetrated:\t")
@@ -60,7 +60,7 @@ elif response == "R" or response == "r":
     try:
         image = open(sys.argv[1], "rb")
     except FileNotFoundError:
-        print("Error: The image file you specified was not found.")
+        print("Error: The multimedia file you specified was not found.")
         exit(-1)
     contents = image.read()
     image.close()
