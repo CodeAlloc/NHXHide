@@ -21,7 +21,7 @@ $ chmod +x setup.sh
 $ ./setup.sh
 ```
 
-For Windows, directly download NHXHide .py and use it via python3 shell:
+For Windows, directly download [NHXHide.py] and use it via python3 shell:
 
 ```sh
 $ python3 NHXHide.py
@@ -34,3 +34,5 @@ Using this tool is simple. One argument is required, which is the multimedia fil
 ```sh
 $ NHXHide <multimedia file> <optional:data file\folder>
 ```
+
+[NHXHide.py]: <https://github.com/chmuhammadsohaib/NHXHide/blob/master/NHXHide.py>
