@@ -38,6 +38,7 @@ if response == "E" or response == "e":
         print("Your Data:\t" + data.decode("ascii"))
         exit(0)
 elif response == "P" or response == "p":
+    tmp = False
     try:
         image = open(sys.argv[1], "rb")
     except FileNotFoundError:
